@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Thatikonda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script>
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
+
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span>&lt;&gt;</span> Hari Thatikonda
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="hamburger-menu" id="hamburger-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="placeholder-user.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Hari Thatikonda</h1>
+            <p>Software Developer at TCS</p>
+        </div>
+        
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>I am a passionate software developer with experience in building web applications using modern technologies. I enjoy solving complex problems and creating intuitive user experiences.</p>
+            <button class="download-btn">Download CV</button>
+        </div>
+    </div>
+
+    <section class="projects-section">
+        <h2>My Projects</h2>
+        <p>Check out some of my recent work.</p>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="placeholder.svg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A web application built with React and TypeScript.</p>
+                <div class="project-links">
+                    <a href="#" class="btn demo-btn">Demo</a>
+                    <a href="#" class="btn code-btn">Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="placeholder.svg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A mobile app built with React Native and Expo.</p>
+                <div class="project-links">
+                    <a href="#" class="btn demo-btn">Demo</a>
+                    <a href="#" class="btn code-btn">Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="placeholder.svg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A backend API built with Node.js and Express.</p>
+                <div class="project-links">
+                    <a href="#" class="btn demo-btn">Demo</a>
+                    <a href="#" class="btn code-btn">Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>My Skills</h2>
+        <p>Here are some of the technologies I'm proficient in, categorized by their usage.</p>
+        
+        <div class="skills-category">
+            <h3>Programming Languages</h3>
+            <br>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="bi bi-journal-code skill-icon"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-pi skill-icon"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-code skill-icon"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-filetype-tsx skill-icon"></i>
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-c-square skill-icon"></i>
+                    <p>C</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-code-slash skill-icon"></i>
+                    <p>HTML/CSS</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="skills-category">
+            <h3>Frameworks and Libraries</h3>
+            <br>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="bi bi-box-arrow-in-down skill-icon"></i>
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-clipboard-check skill-icon"></i>
+                    <p>Angular</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-box-arrow-in-up skill-icon"></i>
+                    <p>Spring MVC</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-check-square skill-icon"></i>
+                    <p>Mockito</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="skills-category">
+            <h3>Tools</h3>
+            <br>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="bi bi-tools skill-icon"></i>
+                    <p>Maven</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-git skill-icon"></i>
+                    <p>Git/GitLab</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-bug skill-icon"></i>
+                    <p>JIRA</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-earmark-code skill-icon"></i>
+                    <p>IntelliJ IDEA</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-earmark-code skill-icon"></i>
+                    <p>Eclipse</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-file-earmark-code skill-icon"></i>
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-envelope-open skill-icon"></i>
+                    <p>Postman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? Let's chat!</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy; 2024 Hari Thatikonda</p>
+        </div>
+        
+        <div class="footer-right">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

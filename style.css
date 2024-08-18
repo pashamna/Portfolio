@@ -12,74 +12,14 @@ body {
     padding-top: 50px; /* Account for the fixed navbar */
 }
 
-.navbar {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
+.navbar.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #000;
-}
-
-.navbar .logo span {
-    color: #000000;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar .nav-links li {
-    display: inline;
-}
-
-.navbar .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.125rem;
-    position: relative;
-    padding-bottom: 3px;
-}
-
-.navbar .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #000000;
-    transition: width 0.3s ease;
-}
-
-.navbar .nav-links a:hover::after {
-    width: 100%; /* Extend the underline to the full width of the text */
-}
-
-.hamburger-menu {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #000;
-    cursor: pointer;
-}
-
-.container {
+.profile-container {
     width: 100%;
     margin-top: 0;
     padding: 40px;
@@ -383,36 +323,8 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px;
-    }
 
-    .nav-links {
-        display: none; /* Hide nav links on mobile */
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-        padding: 20px 0;
-    }
-
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on mobile */
-    }
-
-    .nav-links.active {
-        display: flex; /* Show nav links when hamburger is clicked */
-    }
-
-    .container {
+    .profile-container {
         flex-direction: column;
         padding: 20px;
     }

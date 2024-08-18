@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 50px; /* Account for the fixed navbar */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar.bg-transparent {
@@ -17,6 +19,7 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-container {
@@ -30,6 +33,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .profile-pic {
@@ -54,12 +58,14 @@ body {
     font-size: 2.5rem;
     color: #000;
     margin-top: 10px;
+    transition: color 0.3s ease;
 }
 
 .header p {
     font-size: 1.25rem;
     color: #666;
     margin-top: 10px;
+    transition: color 0.3s ease;
 }
 
 .about-me {
@@ -70,6 +76,7 @@ body {
 .about-me h2 {
     font-size: 1.5rem;
     color: #000;
+    transition: color 0.3s ease;
 }
 
 .about-me p {
@@ -77,6 +84,7 @@ body {
     color: #333;
     margin-top: 10px;
     line-height: 1.6;
+    transition: color 0.3s ease;
 }
 
 .download-btn {
@@ -88,6 +96,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download-btn:hover {
@@ -99,18 +108,21 @@ body {
     padding: 40px 20px;
     background-color: #f5f5f5;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .projects-section h2 {
     font-size: 2rem;
     color: #000;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .projects-section p {
     font-size: 1.125rem;
     color: #666;
     margin-bottom: 40px;
+    transition: color 0.3s ease;
 }
 
 .projects-container {
@@ -127,6 +139,7 @@ body {
     padding: 20px;
     width: 30%;
     text-align: left;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .project-card img {
@@ -143,12 +156,14 @@ body {
     font-size: 1.5rem;
     color: #000;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .project-card p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
 .project-links {
@@ -163,6 +178,7 @@ body {
     text-decoration: none;
     display: inline-block;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .demo-btn {
@@ -188,18 +204,21 @@ body {
     padding: 40px 20px;
     background-color: #f5f5f5;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skills-section h2 {
     font-size: 2rem;
     color: #000;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .skills-section p {
     font-size: 1.125rem;
     color: #666;
     margin-bottom: 40px;
+    transition: color 0.3s ease;
 }
 
 .skills-category {
@@ -211,6 +230,7 @@ body {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+    transition: color 0.3s ease;
 }
 
 .skills-container {
@@ -229,30 +249,35 @@ body {
     font-size: 2.5rem;
     color: #000;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .skill-card p {
     font-size: 1rem;
     color: #000;
     margin-top: 5px;
+    transition: color 0.3s ease;
 }
 
 .contact-section {
     padding: 60px 20px;
     background-color: #fff;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-section h2 {
     font-size: 2rem;
     color: #000;
     margin-bottom: 10px;
+    transition: color 0.3s ease;
 }
 
 .contact-section p {
     font-size: 1.125rem;
     color: #ffffff;
     margin-bottom: 40px;
+    transition: color 0.3s ease;
 }
 
 .contact-form {
@@ -270,6 +295,7 @@ body {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .contact-form textarea {
@@ -285,6 +311,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -300,6 +327,7 @@ body {
     font-size: 0.875rem;
     color: #666;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-left {
@@ -316,6 +344,7 @@ body {
     color: #666;
     font-size: 1.25rem;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-right a:hover {
@@ -360,4 +389,202 @@ body {
         width: 100%;
         padding: 0 20px;
     }
+}
+
+/* Toggle Dark/Light theme*/
+
+.switch {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 2.5em; 
+    height: 1.4em; 
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.1em;
+    width: 1.1em;
+    border-radius: 50%;
+    left: 5%;
+    bottom: 10%;
+    background: var(--background);
+    box-shadow: inset 10px 0px 0px 6px #fff000;
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #522ba7;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    background-color: #522ba7;
+    box-shadow: inset 3px -2px 0px 2px #fff000;
+  }
+  
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .nav-link,
+.dark-mode .navbar-toggler-icon {
+    color: #ffffff;
+}
+
+.dark-mode .navbar-toggler {
+    border-color: #ffffff;
+}
+
+/* Override specific elements for dark mode */
+.dark-mode .navbar.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .profile-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .projects-section {
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .skills-section {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .contact-section {
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .footer {
+    background-color: #000;
+}
+
+.dark-mode .header h1,
+.dark-mode .header p,
+.dark-mode .about-me h2,
+.dark-mode .about-me p,
+.dark-mode .projects-section h2,
+.dark-mode .projects-section p,
+.dark-mode .project-card h3,
+.dark-mode .project-card p,
+.dark-mode .skills-section h2,
+.dark-mode .skills-section p,
+.dark-mode .skills-category h3,
+.dark-mode .skill-card p,
+.dark-mode .contact-section h2,
+.dark-mode .contact-section p,
+.dark-mode .footer {
+    color: #e0e0e0;
+}
+
+.dark-mode .project-card {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .download-btn,
+.dark-mode .submit-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .download-btn:hover,
+.dark-mode .submit-btn:hover {
+    background-color: #444;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+.dark-mode .btn {
+    border: 1px solid #fff;
+}
+
+.dark-mode .demo-btn {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .code-btn {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode .footer-right a {
+    color: #e0e0e0;
+}
+
+.dark-mode .footer-right a:hover {
+    color: #fff;
+}
+
+.dark-mode .bi {
+    color: #e0e0e0;
+}
+
+/* Style the toggle switch */
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-check-input:checked + .form-check-label #theme-icon {
+    color: #f39c12; /* color for sun (light mode) */
+}
+
+.form-check-input:not(:checked) + .form-check-label #theme-icon {
+    color: #f1c40f; /* color for moon (dark mode) */
+}
+
+/* Optional: customize the switch */
+.form-check-input {
+    width: 50px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #333;
+}
+
+.form-check-input:not(:checked) {
+    background-color: #ccc;
 }

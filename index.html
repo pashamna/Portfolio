@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari Thatikonda</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap.min.css">
-<script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="resources/bootstrap.min.css">
+<script src="resources/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 <body>
@@ -23,10 +25,11 @@
                     <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                   </li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
                 <div class="form-check form-switch">
@@ -41,7 +44,7 @@
        
     <div class="profile-container">
         <div class="header">
-            <img src="placeholder-user.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="resources/placeholder-user.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Hari Thatikonda</h1>
             <p>Software Developer at TCS</p>
         </div>
@@ -49,16 +52,17 @@
         <div class="about-me">
             <h2>About Me</h2>
             <p>I am a passionate software developer with experience in building web applications using modern technologies. I enjoy solving complex problems and creating intuitive user experiences.</p>
-            <button class="download-btn">Download CV</button>
+            <a href="resources/path-to-your-cv.pdf" class="download-btn" download>Download CV</a>
+
         </div>
     </div>
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <h2>My Projects</h2>
         <p>Check out some of my recent work.</p>
         <div class="projects-container">
             <div class="project-card">
-                <img src="placeholder.svg" alt="Project 1">
+                <img src="resources/placeholder.svg" alt="Project 1">
                 <h3>Project 1</h3>
                 <p>A web application built with React and TypeScript.</p>
                 <div class="project-links">
@@ -67,7 +71,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="placeholder.svg" alt="Project 2">
+                <img src="resources/placeholder.svg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>A mobile app built with React Native and Expo.</p>
                 <div class="project-links">
@@ -76,7 +80,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="placeholder.svg" alt="Project 3">
+                <img src="resources/placeholder.svg" alt="Project 3">
                 <h3>Project 3</h3>
                 <p>A backend API built with Node.js and Express.</p>
                 <div class="project-links">
@@ -87,38 +91,43 @@
         </div>
     </section>
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills">
         <h2>My Skills</h2>
-        <p>Here are some of the technologies I'm proficient in, categorized by their usage.</p>
+        <p>Here are some of the technologies I'm proficient in.</p>
         
         <div class="skills-category">
             <h3>Programming Languages</h3>
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <i class="bi bi-journal-code skill-icon"></i>
+                    <img src="resources/java.png" class="skill-icon" style="transform: scale(1.8);" alt="">
                     <p>Java</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-pi skill-icon"></i>
+                    <img src="resources/python.png" class="skill-icon" alt="">
                     <p>Python</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-file-code skill-icon"></i>
+                    <img src="resources/JavaScript.png" class="skill-icon" alt="">
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-filetype-tsx skill-icon"></i>
+                    <img src="resources/TypeScript.png" class="skill-icon" style="border-radius: 20%;" alt="">
                     <p>TypeScript</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-c-square skill-icon"></i>
+                    <img src="resources/c-programming.png" class="skill-icon" alt="">
                     <p>C</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-code-slash skill-icon"></i>
+                    <img src="resources/HtmlCss.png" class="skill-icon" style="transform: scale(1.7);" alt="">
                     <p>HTML/CSS</p>
                 </div>
+                <div class="skill-card">
+                    <img src="resources/sql-logo.png" class="skill-icon" alt="SQL">
+                    <p>SQL</p>
+                </div>
+                
             </div>
         </div>
     
@@ -127,19 +136,17 @@
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <i class="bi bi-box-arrow-in-down skill-icon"></i>
+                    <img src="resources/spring-boot.svg" class="skill-icon" alt="">
                     <p>Spring Boot</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-clipboard-check skill-icon"></i>
+                    <i class="fa-brands fa-angular skill-icon"></i>
                     <p>Angular</p>
                 </div>
+                <div class="skill-card"><img src="resources/bootstrap.png" class="skill-icon" alt="">
+                    <p>Bootstrap</p>  </div>              
                 <div class="skill-card">
-                    <i class="bi bi-box-arrow-in-up skill-icon"></i>
-                    <p>Spring MVC</p>
-                </div>
-                <div class="skill-card">
-                    <i class="bi bi-check-square skill-icon"></i>
+                    <img src="resources/junit5-logo.png" class="skill-icon" alt="">
                     <p>Mockito</p>
                 </div>
             </div>
@@ -150,38 +157,48 @@
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <i class="bi bi-tools skill-icon"></i>
+                    <img src="resources/maven.png" class="skill-icon" style="transform: scale(1.5);" alt="">
                     <p>Maven</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-git skill-icon"></i>
+                    <i class="fa-brands fa-git-alt skill-icon" style="transform: scale(1.2);"></i>
                     <p>Git/GitLab</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-bug skill-icon"></i>
+                    <i class="fab fa-jira skill-icon"></i>
                     <p>JIRA</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-file-earmark-code skill-icon"></i>
+                    <img src="resources/gcp-logo.png" class="skill-icon" style="transform: scale(1.5);" alt="GCP">
+                    <p>GCP</p>
+                </div>
+
+                <div class="skill-card"><img src="resources/jenkins.png" class="skill-icon" style="transform: scale(1.5);" alt="">
+                    <p>Jenkins</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="resources/IntelliJ_IDEA_icon.png" alt="IntelliJ IDEA logo" class="skill-icon">
                     <p>IntelliJ IDEA</p>
                 </div>
+                
                 <div class="skill-card">
-                    <i class="bi bi-file-earmark-code skill-icon"></i>
+                    <img src="resources/eclipse.png" class="skill-icon" style="transform: scale(1.6);" alt="">
                     <p>Eclipse</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-file-earmark-code skill-icon"></i>
-                    <p>Visual Studio Code</p>
+                    <img src="resources/vscode.png" class="skill-icon" alt="">
+                    <p>VS Code</p>
                 </div>
                 <div class="skill-card">
-                    <i class="bi bi-envelope-open skill-icon"></i>
+                    <img src="resources/postman.svg" class="skill-icon" style="transform: scale(1.8);" alt="">
                     <p>Postman</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <h2>Get in Touch</h2>
         <p>Have a project in mind? Let's chat!</p>
         <form class="contact-form" id="contactForm">
@@ -203,12 +220,12 @@
         </div>
         
         <div class="footer-right">
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/thug_hari"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/hari-thatikonda/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/thughari"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/thug_hari"><i class="bi bi-instagram"></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="resources/script.js"></script>
 </body>
 </html>

@@ -87,19 +87,20 @@ body {
 }
 
 .download-btn {
-    margin-top: 20px;
+    display: inline-block;
     padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #000;
-    border: none;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .download-btn:hover {
-    background-color: #444;
+    background-color: #3671e7;
+    text-decoration: none; 
 }
 
 .projects-section {
@@ -480,7 +481,7 @@ body {
 
 .dark-mode .download-btn:hover,
 .dark-mode .submit-btn:hover {
-    background-color: #444;
+    background-color: #4333d5;
 }
 
 .dark-mode .contact-form input,
@@ -553,6 +554,22 @@ body {
 }
 
 
+
+/* Dark mode styles */
+.dark-mode .skill-icon {
+    color: #FFFFFF;  /* White color for dark mode */
+}
+
+
+.skill-icon {
+    width: 40px;  /* Ensure all icons are of similar size */
+    height: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    object-fit: contain;  /* Ensure the image fits within the defined width and height */
+}
+
+
 @media (max-width: 768px) {
 
     .profile-container {
@@ -574,9 +591,22 @@ body {
     }
 
     .download-btn {
-        display: block;
-        margin: 20px auto 0 auto;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
     }
+    
+    .download-btn:hover {
+        background-color: #3671e7;
+        text-decoration: none; 
+    }
+    
 
     .projects-container {
         flex-direction: column;

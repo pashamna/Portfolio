@@ -569,8 +569,17 @@ body {
     object-fit: contain;  /* Ensure the image fits within the defined width and height */
 }
 
+.mobile-text{
+    display: none;
+}
 
 @media (max-width: 768px) {
+    .mobile-text{
+        display: inline;
+    }
+    .desktop-text{
+        display: none;
+    }
 
     .profile-container {
         flex-direction: column;

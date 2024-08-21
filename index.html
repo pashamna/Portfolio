@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hari Thatikonda</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#010101">
     <link rel="stylesheet" href="resources/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/bootstrap.min.css">
@@ -13,7 +20,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><span>&lt;&gt;</span> Hari Thatikonda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,30 +28,31 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
                 <div class="form-check form-switch">
                     <label class="switch">
                         <input type="checkbox" id="darkModeSwitch" onclick="toggleTheme()">
                         <span class="slider"></span>
-                    </label>   
+                    </label>
                 </div>
             </div>
         </div>
     </nav>
-       
+    
     <div class="profile-container">
         <div class="header">
-            <img src="resources/placeholder-user.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="resources/cartoon-man-wearing-glasses.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Hari Thatikonda</h1>
             <p>Software Developer at TCS</p>
         </div>
@@ -52,8 +60,10 @@
         <div class="about-me">
             <h2>About Me</h2>
             <p>I am a passionate software developer with experience in building web applications using modern technologies. I enjoy solving complex problems and creating intuitive user experiences.</p>
-            <a href="resources/path-to-your-cv.pdf" class="download-btn" download>Download CV</a>
-
+            <a href="resources/Hari New.pdf" class="download-btn" id="resume">
+                <span class="desktop-text">View CV</span>
+                <span class="mobile-text">Download CV</span>
+            </a>
         </div>
     </div>
 
@@ -62,7 +72,7 @@
         <p>Check out some of my recent work.</p>
         <div class="projects-container">
             <div class="project-card">
-                <img src="resources/placeholder.svg" alt="Project 1">
+                <img src="resources/icons/placeholder.svg" alt="Project 1">
                 <h3>Project 1</h3>
                 <p>A web application built with React and TypeScript.</p>
                 <div class="project-links">
@@ -71,7 +81,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="resources/placeholder.svg" alt="Project 2">
+                <img src="resources/icons/placeholder.svg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>A mobile app built with React Native and Expo.</p>
                 <div class="project-links">
@@ -80,7 +90,7 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="resources/placeholder.svg" alt="Project 3">
+                <img src="resources/icons/placeholder.svg" alt="Project 3">
                 <h3>Project 3</h3>
                 <p>A backend API built with Node.js and Express.</p>
                 <div class="project-links">
@@ -100,31 +110,31 @@
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <img src="resources/java.png" class="skill-icon" style="transform: scale(1.8);" alt="">
+                    <img src="resources/icons/java.png" class="skill-icon" style="transform: scale(1.8);" alt="">
                     <p>Java</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/python.png" class="skill-icon" alt="">
+                    <img src="resources/icons/python.png" class="skill-icon" alt="">
                     <p>Python</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/JavaScript.png" class="skill-icon" alt="">
+                    <img src="resources/icons/JavaScript.png" class="skill-icon" alt="">
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/TypeScript.png" class="skill-icon" style="border-radius: 20%;" alt="">
+                    <img src="resources/icons/TypeScript.png" class="skill-icon" style="border-radius: 20%;" alt="">
                     <p>TypeScript</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/c-programming.png" class="skill-icon" alt="">
+                    <img src="resources/icons/c-programming.png" class="skill-icon" alt="">
                     <p>C</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/HtmlCss.png" class="skill-icon" style="transform: scale(1.7);" alt="">
+                    <img src="resources/icons/HtmlCss.png" class="skill-icon" style="transform: scale(1.7);" alt="">
                     <p>HTML/CSS</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/sql-logo.png" class="skill-icon" alt="SQL">
+                    <img src="resources/icons/sql-logo.png" class="skill-icon" alt="SQL">
                     <p>SQL</p>
                 </div>
                 
@@ -136,17 +146,17 @@
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <img src="resources/spring-boot.svg" class="skill-icon" alt="">
+                    <img src="resources/icons/spring-boot.svg" class="skill-icon" alt="">
                     <p>Spring Boot</p>
                 </div>
                 <div class="skill-card">
                     <i class="fa-brands fa-angular skill-icon"></i>
                     <p>Angular</p>
                 </div>
-                <div class="skill-card"><img src="resources/bootstrap.png" class="skill-icon" alt="">
+                <div class="skill-card"><img src="resources/icons/bootstrap.png" class="skill-icon" alt="">
                     <p>Bootstrap</p>  </div>              
                 <div class="skill-card">
-                    <img src="resources/junit5-logo.png" class="skill-icon" alt="">
+                    <img src="resources/icons/junit5-logo.png" class="skill-icon" alt="">
                     <p>Mockito</p>
                 </div>
             </div>
@@ -157,7 +167,7 @@
             <br>
             <div class="skills-container">
                 <div class="skill-card">
-                    <img src="resources/maven.png" class="skill-icon" style="transform: scale(1.5);" alt="">
+                    <img src="resources/icons/maven.png" class="skill-icon" style="transform: scale(1.5);" alt="">
                     <p>Maven</p>
                 </div>
                 <div class="skill-card">
@@ -169,29 +179,29 @@
                     <p>JIRA</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/gcp-logo.png" class="skill-icon" style="transform: scale(1.5);" alt="GCP">
+                    <img src="resources/icons/gcp-logo.png" class="skill-icon" style="transform: scale(1.5);" alt="GCP">
                     <p>GCP</p>
                 </div>
 
-                <div class="skill-card"><img src="resources/jenkins.png" class="skill-icon" style="transform: scale(1.5);" alt="">
+                <div class="skill-card"><img src="resources/icons/jenkins.png" class="skill-icon" style="transform: scale(1.5);" alt="">
                     <p>Jenkins</p>
                 </div>
 
                 <div class="skill-card">
-                    <img src="resources/IntelliJ_IDEA_icon.png" alt="IntelliJ IDEA logo" class="skill-icon">
+                    <img src="resources/icons/IntelliJ_IDEA_icon.png" alt="IntelliJ IDEA logo" class="skill-icon">
                     <p>IntelliJ IDEA</p>
                 </div>
                 
                 <div class="skill-card">
-                    <img src="resources/eclipse.png" class="skill-icon" style="transform: scale(1.6);" alt="">
+                    <img src="resources/icons/eclipse.png" class="skill-icon" style="transform: scale(1.6);" alt="">
                     <p>Eclipse</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/vscode.png" class="skill-icon" alt="">
+                    <img src="resources/icons/vscode.png" class="skill-icon" alt="">
                     <p>VS Code</p>
                 </div>
                 <div class="skill-card">
-                    <img src="resources/postman.svg" class="skill-icon" style="transform: scale(1.8);" alt="">
+                    <img src="resources/icons/postman.svg" class="skill-icon" style="transform: scale(1.8);" alt="">
                     <p>Postman</p>
                 </div>
             </div>

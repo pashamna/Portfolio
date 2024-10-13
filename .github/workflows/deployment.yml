@@ -1,0 +1,24 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Replace App Script ID in script.js
+        run: |
+          APP_SCRIPT="${{ secrets.APP_SCRIPT }}"
+          sed -i "s|AKfycby9S-NaNoeaITbVzXAmRm0bxUhbHhTNChxIaRaImckoZJyotr0N7iOZUoJHRnMGEl1GXQ|$APP_SCRIPT|g" resources/script.js
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Change this if your index.html is in a different directory

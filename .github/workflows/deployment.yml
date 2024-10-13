@@ -12,10 +12,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Replace App Script ID in script.js
+      - name: Create app-script-url.js
         run: |
-          APP_SCRIPT="${{ secrets.APP_SCRIPT }}"
-          sed -i "s|AKfycby9S-NaNoeaITbVzXAmRm0bxUhbHhTNChxIaRaImckoZJyotr0N7iOZUoJHRnMGEl1GXQ|$APP_SCRIPT|g" resources/script.js
+          echo "const APP_SCRIPT_URL = 'https://script.google.com/macros/s/${{ secrets.APP_SCRIPT }}/exec';" > resources/app-script-url.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -68,6 +68,12 @@ You can access the live version of my portfolio here:
 
 ---
 
+## 📄 Apps Script Integration Guide
+
+For detailed instructions on integrating Google Apps Script with contact form, please refer to the [Apps Script Integration Guide](Apps-Script-Integration-Guide.md).
+
+---
+
 ## 📬 Contact
 
 Feel free to reach out to me through the contact form on the website or via my social media links:

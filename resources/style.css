@@ -558,6 +558,7 @@ body {
 /* Dark mode styles */
 .dark-mode .skill-icon {
     color: #FFFFFF;  /* White color for dark mode */
+    fill: white;
 }
 
 

@@ -84,6 +84,7 @@ body {
     margin-top: 10px;
     line-height: 1.6;
     transition: color 0.3s ease;
+    text-align: justify;
 }
 
 .download-btn {
@@ -101,6 +102,67 @@ body {
 .download-btn:hover {
     background-color: #3671e7;
     text-decoration: none; 
+}
+
+.experience-section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.experience-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.experience-card {
+    background-color: #f8f3f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 150px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    text-align: justify;
+}
+
+
+.experience-links {
+    display: flex;
+    gap: 10px;
 }
 
 .projects-section {
@@ -164,6 +226,7 @@ body {
     color: #666;
     margin-bottom: 20px;
     transition: color 0.3s ease;
+    text-align: justify;
 }
 
 .project-links {
@@ -179,25 +242,6 @@ body {
     display: inline-block;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.demo-btn {
-    background-color: #000;
-    color: #fff;
-}
-
-.code-btn {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-
-.demo-btn:hover {
-    background-color: #444;
-}
-
-.code-btn:hover {
-    background-color: #f5f5f5;
 }
 
 .skills-section {
@@ -430,7 +474,10 @@ body {
     background-color: #1e1e1e;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
-
+.dark-mode .experience-section {
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
 .dark-mode .projects-section {
     background-color: #000000;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -454,6 +501,9 @@ body {
 .dark-mode .header p,
 .dark-mode .about-me h2,
 .dark-mode .about-me p,
+.dark-mode .experience-section h2,
+.dark-mode .experience-card h3,
+.dark-mode .experience-card p,
 .dark-mode .projects-section h2,
 .dark-mode .projects-section p,
 .dark-mode .project-card h3,
@@ -468,6 +518,10 @@ body {
     color: #e0e0e0;
 }
 
+.dark-mode .experience-card {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
 .dark-mode .project-card {
     background-color: #333;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
